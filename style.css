@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,100&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: #dedede;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: relative;
+    width: 69%;
+    height: 90%;
+    background: #dedede;
+    box-shadow: 0px 0px 50px -1px rgb(0, 0, 0, .5);
+    padding: 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: 1s linear;
+    border-radius: 33px;
+    background: linear-gradient(#000, rgb(249, 193, 72)), radial-gradient(circle, white, black);
+
+}
+
+header .logo {
+    position: absolute;
+    top: 0;
+    left: 12.5%;
+    width: 270px;
+    height: 350.5px;
+    background: rgb(176, 130, 58);
+    transition: 1s linear;
+    border-radius: 10px;
+    align-items: center;
+}
+
+header .logo h1 {
+    color: #000;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+header .logo img {
+    width: 300px;
+    height: 300px;
+    margin: 10px 0px 0px -20px;
+    filter: drop-shadow(0px 0px 20px rgb(250, 52, 55, 0.3));
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    border-radius: 40%;
+    -moz-box-shadow: 1px 1px 3px 0 #141414;
+    -webkit-box-shadow: 1px 1px 3px 0 #020202;
+    box-shadow: 1px 1px 3px 0 #0b0b0b;
+}
+
+header nav {
+    padding: 0px 25px;
+    width: 100%;
+    height: 9%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(176, 130, 58);
+}
+
+header .nav menu {
+    font-size: 25px;
+    color: rgb(8, 35, 66);
+}
+
+
+
+#i {
+    padding: 0px 25px;
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    transition: .3s linear;
+    right: 25px;
+}
+
+.sub-menu-wrap {
+    background-color: rgb(176, 130, 58);
+    width: 0;
+    margin: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 1.5s;
+    position: absolute;
+    left: 12.4rem;
+    top: 70px;
+}
+
+.sub-menu-wrap.open-menu {
+    max-height: 32rem;
+    width: 10rem;
+    z-index: 1;
+
+}
+
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 12px 0;
+    height: 1.37rem;
+}
+
+.sub-menu-link p {
+    width: 100%;
+    margin: 0 6px;
+    color: #000;
+    font-size: small;
+}
+
+.sub-menu-link span {
+    margin: 0 6px;
+    font-size: 18px;
+    transition: tranform 0.5s;
+    color: #000;
+}
+
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+
+
+
+
+
+
+#i a::before {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: #000;
+    border-radius: 50%;
+    bottom: -5px;
+    left: 45%;
+    opacity: 0;
+    transition: .3s linear;
+}
+
+#i a::after {
+    color: #000;
+}
+
+
+
+header .left_menu {
+    width: 20px;
+    height: 90%;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .left_menu a {
+    margin: 30px 0px;
+    padding: 0px 5px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #000;
+    font-weight: 600;
+    transition: .3s linear;
+    transform: rotate(-90deg);
+}
+
+header .left_menu a:hover {
+    color: #000;
+}
+
+
+
+header section {
+    width: 97%;
+    height: 90%;
+    /* border: 1px solid #000; */
+}
+
+header section .content {
+    position: relative;
+    left: 460px;
+    margin-top: 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    transition: 1s linear;
+}
+
+header section .content h1 {
+    font-size: 36px;
+    transition: 1s linear;
+    z-index: 1;
+    color: #000;
+}
+
+header section .content p {
+    font-size: 10px;
+    font-weight: 600;
+    width: 290px;
+    word-break: break-all;
+    color: #000;
+}
+
+header section .content .price_order {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+header section .content .price_order .price h2 {
+    font-size: 20px;
+    color: #000;
+    line-height: 18px;
+}
+
+header section .content .price_order .price p {
+    font-size: 10px;
+    width: 15rem;
+    color: #000;
+}
+
+header section .content .price_order a {
+    padding: 4px 20px;
+    background: rgb(176, 130, 58);
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 35px;
+    border-radius: 15px;
+}
+
+header section .cards {
+    width: 62.5%;
+    height: 140px;
+    /* border: 1px solid #000; */
+    position: fixed;
+    top: 69%;
+    left: 18.5%;
+    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: auto;
+    scroll-behavior: smooth;
+    transition: 1s linear;
+}
+
+header section .cards::-webkit-scrollbar {
+    display: none;
+
+}
+
+header section .cards .card {
+    position: relative;
+    min-width: 125px;
+    min-height: 125px;
+    border: 1px solid rgb(250, 52, 55);
+    margin-right: 13px;
+    background: rgb(176, 130, 58);
+    border-radius: 50px 10px 10px 10px;
+}
+
+header section .cards .card:nth-last-child(1) {
+    margin-right: 0px;
+}
+
+header section .cards .card .dis {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: -5px;
+    left: -5px;
+    border-radius: 50%;
+}
+
+header section .cards .card h3 {
+    display: none;
+}
+
+
+header section .cards .card h4 {
+    position: absolute;
+    top: 20px;
+    right: 11px;
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+header section .cards .card h5 {
+    color: #000;
+    font-size: 11px;
+    font-family: 500;
+    padding: 0px 10px;
+    margin-top: -8px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+header section .cards .card p {
+    color: rgb(203, 203, 203);
+    font-size: 9px;
+    font-weight: 500;
+    padding: 0px 10px;
+}
+
+
+header section .social {
+    position: relative;
+    width: 100%;
+    /* border: 1px solid #000; */
+    top: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s linear;
+}
+
+header section .social .btns {
+    margin-left: 30px;
+}
+
+header section .social .btns .bi {
+    font-size: 13px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.btns #right_button {
+    position: fixed;
+    left: 82%;
+    top: 78%;
+    bottom: 85px;
+    font-size: 25px;
+}
+
+.btns #left_button {
+    position: fixed;
+    left: 16%;
+    top: 78%;
+    bottom: 85px;
+    font-size: 25px;
+
+}
+
+header section .social .btns .bi:hover {
+    color: rgb(0 0 0 .5);
+}
+
+header section .social .icons {
+    display: flex;
+    align-items: center;
+}
+
+header section .social .icons a {
+    font-size: 12px;
+    margin-left: 10px;
+    color: #282828;
+    transition: .3s linear;
+}
+
+header section .social .icons a:hover {
+    color: #000;
+}
+
+
+@media screen and (max-width: 1260px) {
+    header {
+        width: 83%;
+    }
+
+    header section .card {
+        min-width: 132px;
+        min-height: 132px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        width: 95vw;
+        height: 98vh;
+    }
+
+    header section .card {
+        min-width: 132px;
+        min-height: 132px;
+    }
+
+    header .logo {
+        left: 34%;
+        height: 403.5px;
+    }
+
+    header section .content {
+        position: relative;
+        left: 10rem;
+        margin-top: 5%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        transition: 1s linear;
+        top: 30rem;
+    }
+
+    header section .cards {
+        top: 74%;
+        left: 18.5%;
+    }
+    .sub-menu-wrap.open-menu {
+        max-height: 32rem;
+        width: 12rem;
+        z-index: 1;
+        left: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    header {
+        left: 13%;
+        width: 95vw;
+        height: 98vh;
+    }
+
+    header section .content {
+        left: 340px;
+    }
+
+    header section {
+        width: 93%;
+    }
+
+    header .logo h1 {
+        position: relative;
+        top: 11px;
+    }
+
+    .sub-menu-wrap.open-menu {
+        max-height: 32rem;
+        width: 92%;
+        z-index: 1;
+        left: 7.4rem;
+    }
+
+    header section .content {
+        left: 4rem;
+        top: 25rem;
+    }
+
+    header .logo {
+        left: 34%;
+        top: 8%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    header {
+        width: 92vw;
+        height: 95vh;
+    }
+
+    header .logo {
+        left: 16%;
+        top: 8%;
+    }
+
+
+    @media screen and (max-width: 685px) {
+
+        header section .content {
+            left: 11%;
+            top: 50%;
+            font-size: 48px;
+        }
+
+        header .logo {
+            left: 16%;
+            top: 8%;
+        }
+
+        header section .cards {
+            top: 75%;
+            left: 10%;
+            width: 77%;
+        }
+
+        header section .social {
+            top: 60%;
+        }
+
+        header section .social .btns {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        header .logo {
+            left: 21%;
+            top: 8%;
+        }
+
+        header section .content {
+            left: 12%;
+            top: 50%;
+            height: 9%;
+            font-size: 43px;
+        }
+
+
+
+    }
+
+    @media screen and (max-width: 430px) {
+        header .logo {
+            left: 16%;
+            top: 8%;
+        }
+
+        header section .content {
+            left: 12%;
+            top: 48%;
+            height: 9%;
+            font-size: 43px;
+        }
+    }
+
+    @media screen and (max-width: 412px) {
+
+
+        header section .content h1 {
+            font-size: 32%;
+        }
+
+        header section .content p {
+            font-size: 26%;
+            width: 270px;
+        }
+
+        header .logo {
+            width: 200px;
+            height: 43%;
+            left: 23%;
+            top: 8%;
+        }
+
+        header .logo img {
+            width: 260px;
+            margin: 31px 0px 0px -31px;
+            top: -6px;
+        }
+
+        header section .card {
+            min-width: 132px;
+            min-height: 132px;
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+        header .logo {
+            left: 22%;
+            top: 8%;
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+        header .logo img {
+            width: 230px;
+            margin: 31px 0px 0px -31px;
+            top: -6px;
+            height: 230px;
+            position: relative;
+            left: 14px;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+        header section .content {
+            left: 12%;
+            top: 48%;
+            height: 9%;
+            font-size: 43px;
+        }
+
+        header .logo img {
+            width: 230px;
+            margin: 31px 0px 0px -31px;
+            top: -15px;
+            height: 230px;
+            position: relative;
+            left: 14px;
+        }
+    }
+
+    @media screen and (max-width: 775px) {
+        header {
+            left: 0%;
+
+        }
+
+        header section .card {
+            min-width: 132px;
+            min-height: 132px;
+        }
+
+        .sub-menu-wrap.open-menu {
+            max-height: 89%;
+            width: 92%;
+            z-index: 1;
+            position: absolute;
+            left: 4%;
+            top: 10%;
+            height: 60%;
+            border-radius: 0 0px 40px 40px;
+        }
+
+        .sub-menu-wrap {
+
+            position: absolute;
+            left: 29%;
+            top: 10%;
+        }
+    }
+}
